@@ -8,7 +8,47 @@
   <title>Audio player</title>
 </head>
 <br>
-  Audio player<br>
+<body bgcolor="#c0c0c0">
+  <body style="text-align: center" >
+ 
+    <h1 style="color: green">
+        
+    </h1>
+ 
+    <h2>Audio player</h2>
+    <br>
+ 
+    <audio id="Test_Audio" controls>
+        <source src="Your Love - Yung Logos.mp3"
+        type="audio/mpeg">
+    </audio>
+     
+    <br><br>
+ 
+    <button ondblclick="play()" type="button">
+        play Audio
+    </button>
+ 
+    <button ondblclick="pause()" type="button">
+        pause Audio
+    </button>
+     
+    <p id="test"></p>
+  
+     
+    <script>
+        var gfg = document.getElementById("Test_Audio");
+         
+        function play() {
+            gfg.play();
+        }
+        function pause() {
+            gfg.pause();
+        }
+    </script>
+ <br>
+ <img src="1.png" class="img-fluid" width="400" height="211">
+  <br>
   <audio src="Your Love - Yung Logos.mp3" controls="controls" type="audio/mp3"></audio><br>
   "Your Love -Yung Logos" <br>
   <a href="Your Love - Yung Logos.mp3">скачать музыку</a><br><br>
@@ -21,8 +61,7 @@
   "Winning -NEFFEX"<br>
     <a href="Winning - NEFFEX.mp3">скачать музыку</a>
    <br>
-   <br>
-    <img src="1.png" class="img-fluid" width="400" height="211">
+  
 
   </audio>
 </body>
